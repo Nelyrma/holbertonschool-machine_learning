@@ -11,8 +11,9 @@ def matrix_transpose(matrix):
     Returns:
         a a transposed matrix
     """
-    #initializing the transpose
-    transpose = [[0 for _ in range(len(matrix))] for _ in range(len(matrix[0]))]
+    # initializing the transpose
+    transpose =[[0 for _ in range(len(matrix))]
+                for _ in range(len(matrix[0]))]
 
     for i in range(len(matrix)):
         for j in range(len(matrix[0])):
