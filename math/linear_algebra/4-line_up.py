@@ -3,7 +3,16 @@
 
 
 def add_arrays(arr1, arr2):
-    #check if the two arrays have the same shape
+    """add_arrays: function that adds two arrays
+
+    Args:
+        arr1 : the first array to add
+        arr2 : the second array to add
+
+    Returns:
+        a new list
+    """
+    # check if the two arrays have the same shape
     if len(arr1) != len(arr2):
         return None
 
