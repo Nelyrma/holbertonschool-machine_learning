@@ -4,6 +4,7 @@
 
 matrix_shape = __import__('2-size_me_please').matrix_shape
 
+
 def add_matrices2D(mat1, mat2):
     """adds two matrix
 
@@ -16,7 +17,7 @@ def add_matrices2D(mat1, mat2):
     """
     shape_mat1 = matrix_shape(mat1)
     shape_mat2 = matrix_shape(mat2)
-    
+
     if shape_mat1 != shape_mat2:
         return None
 
@@ -24,7 +25,7 @@ def add_matrices2D(mat1, mat2):
     result = []
 
     for i in range(len(mat1)):
-        row = [] 
+        row = []
         for j in range(len(mat1[0])):
             sum_elt = mat1[i][j] + mat2[i][j]
             row.append(sum_elt)
