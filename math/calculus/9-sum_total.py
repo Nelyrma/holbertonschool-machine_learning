@@ -12,7 +12,7 @@ def summation_i_squared(n):
         _int_: _an integer value of the sum_
     """
     # check if n is a valid integer
-    if not isinstance(n, int) and n <= 0:
+    if not isinstance(n, int) and n < 1:
         return None
     
     # sum of square of n numbers
