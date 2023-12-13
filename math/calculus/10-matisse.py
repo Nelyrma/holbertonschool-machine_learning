@@ -21,7 +21,7 @@ def poly_derivative(poly):
         return None
 
     # calculate the derivate
-    derivate = [i * poly[i] for i in range(1, len(poly))]
+    derivate = [n * coeff for n, coeff in enumerate(poly[1:], start=1)]
 
     # return [0] if the derivate is 0
     if not derivate:
