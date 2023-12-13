@@ -11,7 +11,7 @@ def poly_derivative(poly):
     Returns:
         new list of coeff representing the derivative of the polynomial
     """
-    #check if poly is a valid list
+    # check if poly is a valid list
     if not isinstance(poly, list):
         return None
 
@@ -19,11 +19,11 @@ def poly_derivative(poly):
     if len(poly) < 2:
         return None
 
-    #calculate the derivate
+    # calculate the derivate
     derivate = [i * poly[i] for i in range(1, len(poly))]
 
     # return [0] if the derivate is 0
-    if all(coeff == 0 for coeff in derivate):
+    if not derivate:
         return [0]
 
     return derivate
