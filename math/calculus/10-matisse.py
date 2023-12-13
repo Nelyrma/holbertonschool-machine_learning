@@ -12,7 +12,8 @@ def poly_derivative(poly):
         new list of coeff representing the derivative of the polynomial
     """
     # check if poly is a valid list
-    if not isinstance(poly, list):
+    if not isinstance(poly, list) \
+            or not all(isinstance(coeff,(int, float)) for coeff in poly) :
         return None
 
     # Check the length of the polynomial
