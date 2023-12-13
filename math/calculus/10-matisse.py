@@ -13,7 +13,7 @@ def poly_derivative(poly):
     """
     # check if poly is a valid list
     if not poly or not isinstance(poly, list) \
-            or not all(isinstance(coeff, (int, float)) for coeff in poly) :
+            or not all(isinstance(coeff, (int, float)) for coeff in poly):
         return None
 
     # calculate the derivate
