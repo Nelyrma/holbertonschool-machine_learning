@@ -10,18 +10,18 @@ def poly_integral(poly, C=0):
         C : integer representing the integration constant
 
     Returns:
-        list : a new list of coefficients representing the integral of the polynomial
+        list : a new list of coefficients
     """
-    # verify if poly is a valid list and C an integer 
+    # verify if poly is a valid list and C an integer
     if not poly or not isinstance(poly, list) \
             or not all(isinstance(coeff, (int, float)) for coeff in poly) \
             or not isinstance(C, int):
         return None
-    
+
     # particular case: if poly is [0], the integral is [C]
     elif poly == [0]:
-        return [float(C)]
-    
+        return [C]
+
     else:
         # Calculate the integral of the polynome
         # The integration formula for xn est x^(n+1)/(n+1) + C
